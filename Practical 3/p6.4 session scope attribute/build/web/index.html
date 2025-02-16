@@ -1,0 +1,25 @@
+<!-- index.jsp -->
+<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ page session="true" %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Welcome to session attribute</title>
+</head>
+<body>
+ 	<h1>Welcome to session attribute</h1>
+	<h2>Samruddhi Surve 5358</h2>
+    
+	<!-- Set session attribute -->
+	<%
+    	session.setAttribute("Username", "Samruddhi");
+	%>
+    
+	<p>Session attribute has been set</p>
+
+	<!-- Link to process.jsp to access the session attribute -->
+	<a href="sam.jsp">Go to Process Page</a>
+</body>
+</html>
